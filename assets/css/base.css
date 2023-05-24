@@ -1,164 +1,277 @@
-:root {
-    --transition-default: 0.3s all ease-in-out;
-    --font-theme: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
-    --size-theme: 14px;
-    --bs-gray-1000: #000000;
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-ExtraLight.ttf");
+	font-weight: 200;
+	font-style: normal;
+}
 
-    --primary-color: #CA1391;
-    --primary-hover: #FF22BA;
-    --primary-black: #861462;
-    --primary-dark: #B11280;
-    --primary-rgb: 202, 19, 1454;
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-ExtraLightItalic.ttf");
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-Light.ttf");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-LightItalic.ttf");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-Regular.ttf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-Italic.ttf");
+	font-weight: 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-Medium.ttf");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-MediumItalic.ttf");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-SemiBold.ttf");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-SemiBoldItalic.ttf");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-Bold.ttf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-BoldItalic.ttf");
+	font-weight: 700;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-ExtraBold.ttf");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-ExtraBoldItalic.ttf");
+	font-weight: 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-Black.ttf");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Nunito";
+	src: url("../fonts/nunito/Nunito-BlackItalic.ttf");
+	font-weight: 900;
+	font-style: italic;
+}
+
+:root {
+	--transition-default: 0.3s all ease-in-out;
+	--font-theme: 'Nunito', Arial, Helvetica, sans-serif;
+
+	--primary-color: #599240;
+	--primary-hover: #AFCE30;
+	--border-theme: #606161;
+	--shadow-theme: 0px 0px 33.4221px rgba(130, 89, 9, 0.0575083), 0px 2.5182px 2.21381px rgba(130, 89, 9, 0.0224916);
 }
 
 body {
-    position: relative;
-    width: 100%;
-    color: var(--bs-gray-800);
-    font-family: var(--font-theme);
-    font-size: var(--size-theme);
-    font-weight: 400;
-    font-style: normal;
-    background-color: #fff;
-    line-height: 1.3;
+	position: relative;
+	width: 100%;
+	color: var(--bs-gray-800);
+	font-family: var(--font-theme);
+	font-size: 14px;
+	font-weight: 00;
+	font-style: normal;
+	background-color: #fff;
+	line-height: 1.4;
 }
 
 a,
 a:hover,
 a:focus {
-    outline: none;
-    text-decoration: none;
-    cursor: pointer;
-    -o-transition: var(--transition-default);
-    transition: var(--transition-default);
-    -webkit-transition: var(--transition-default);
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+	-o-transition: var(--transition-default);
+	transition: var(--transition-default);
+	-webkit-transition: var(--transition-default);
 }
 
 button,
 button:hover,
 button:focus {
-    -webkit-box-shadow: none !important;
-    box-shadow: none !important;
-    outline: none !important;
-    text-decoration: none !important;
-    cursor: pointer;
-    -o-transition: var(--transition-default);
-    transition: var(--transition-default);
-    -webkit-transition: var(--transition-default);
-    cursor: pointer !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+	outline: none !important;
+	text-decoration: none !important;
+	cursor: pointer;
+	-o-transition: var(--transition-default);
+	transition: var(--transition-default);
+	-webkit-transition: var(--transition-default);
+	cursor: pointer !important;
 }
 
 
 .transition-default {
-    -o-transition: var(--transition-default);
-    transition: var(--transition-default);
-    -webkit-transition: var(--transition-default);
+	-o-transition: var(--transition-default);
+	transition: var(--transition-default);
+	-webkit-transition: var(--transition-default);
 }
 
 .background-cover {
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 .image-cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
 }
 
 .image-contain {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	object-fit: contain;
 }
 
 .object-fit-cover {
-    -o-object-fit: cover;
-    object-fit: cover;
+	-o-object-fit: cover;
+	object-fit: cover;
 }
 
 .object-fit-contain {
-    -o-object-fit: contain;
-    object-fit: contain;
+	-o-object-fit: contain;
+	object-fit: contain;
 }
 
 .pseudo:before,
 .pseudo:after {
-    position: absolute;
-    content: '';
-    display: block;
+	position: absolute;
+	content: '';
+	display: block;
 }
 
 .limit {
-    --font-size: 1em;
-    --line-height: inherit;
-    --line: 2;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: var(--line);
-    line-clamp: var(--line);
-    -webkit-box-orient: vertical;
-    height: calc(var(--line) * var(--font-size) * var(--line-height));
+	--font-size: 1em;
+	--line-height: inherit;
+	--line: 2;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: var(--line);
+	line-clamp: var(--line);
+	-webkit-box-orient: vertical;
+	height: calc(var(--line) * var(--font-size) * var(--line-height));
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 input[type='number'] {
-    -moz-appearance: textfield;
+	-moz-appearance: textfield;
 }
 
 .zi--1 {
-    z-index: -1;
+	z-index: -1;
 }
 
 .zi-1 {
-    z-index: 1;
+	z-index: 1;
 }
 
 .zi-2 {
-    z-index: 2;
+	z-index: 2;
 }
 
 .zi-3 {
-    z-index: 3;
+	z-index: 3;
 }
 
 .zi-4 {
-    z-index: 4;
+	z-index: 4;
 }
 
 .zi-5 {
-    z-index: 5;
+	z-index: 5;
 }
 
 .zi-10 {
-    z-index: 10;
+	z-index: 10;
 }
 
 .ratio > img {
-    -o-object-fit: cover;
-    object-fit: cover;
+	-o-object-fit: cover;
+	object-fit: cover;
 }
 
 .ratio-2x1 {
-    --bs-aspect-ratio: 50%;
+	--bs-aspect-ratio: 50%;
 }
 
 .ratio-3x2 {
-    --bs-aspect-ratio: calc(2 / 3 * 100%);
+	--bs-aspect-ratio: calc(2 / 3 * 100%);
+}
+
+.section-gap {
+	padding: 25px 0;
 }
