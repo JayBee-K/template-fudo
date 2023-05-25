@@ -176,14 +176,43 @@
 	transform-origin: top;
 }
 
-.category-wrapper .category-item:hover .category-item_image img {
+.category-wrapper .category-item:not(.is-disabled):hover .category-item_image img {
 	transform: scale(0.8);
 }
 
-.category-wrapper .category-item:hover .category-item_content {
+.category-wrapper .category-item:not(.is-disabled):hover .category-item_content {
 	transform: translateY(-25px);
 }
 
-.category-wrapper .category-item:hover .category-item_content .category-item_type {
+.category-wrapper .category-item:not(.is-disabled):hover .category-item_content .category-item_type {
 	transform: scale(0);
+}
+
+.category-wrapper .category-item.is-disabled {
+	filter: grayscale(1);
+	opacity: .5;
+}
+
+.floating-chat {
+	position: fixed;
+	z-index: 10;
+	right: 45px;
+	bottom: 45px;
+}
+
+.floating-chat .floating-chat_btn {
+	background: var(--gradient-theme);
+	box-shadow: 0px 0px 33.4221px rgba(102, 102, 102, 0.3);
+	border-radius: 24px;
+	padding: 10px 24px;
+	gap: 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--bs-white);
+	font-weight: 900;
+}
+
+.floating-chat .floating-chat_btn:hover {
+	opacity: .9;
 }
