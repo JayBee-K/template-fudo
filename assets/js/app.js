@@ -2,7 +2,7 @@
 export let windowWidth = $(window).width();
 
 export function handleSliderHero() {
-	const heroSlider = document.getElementById('hero-slider')
+	const heroSlider = document.getElementById('hero-slider');
 	if (heroSlider) {
 		new Swiper('#hero-slider .swiper', {
 			speed: 1000,
@@ -26,8 +26,23 @@ export function handleSliderHero() {
 	}
 }
 
+export function handleSetMarginFeature() {
+	if (windowWidth > 991) {
+		const featureBox = document.getElementById('feature-box');
+		if (featureBox) {
+			const featureWrapper = featureBox.querySelector('.feature-wrapper');
+			if (featureWrapper) {
+				const fiftyPercentGap = 25;
+				let heightFeatureWrapper = featureWrapper.scrollHeight * -1 + fiftyPercentGap;
+				featureBox.style.marginBottom = (heightFeatureWrapper / 2) + 'px';
+			}
+		}
+	}
+}
+
 window.addEventListener('load', function () {
-	handleSliderHero()
+	handleSliderHero();
+	handleSetMarginFeature();
 });
 
 
