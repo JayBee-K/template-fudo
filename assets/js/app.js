@@ -40,9 +40,24 @@ export function handleSetMarginFeature() {
 	}
 }
 
+export function handleReturnTop() {
+	const returnTop = document.getElementById('return-top');
+	if(returnTop) {
+		returnTop.addEventListener('click', function () {
+			if (document.documentElement.scrollTop > 0) {
+				window.scrollTo({
+					top: 0,
+					behavior: 'smooth'
+				});
+			}
+		})
+	}
+}
+
 window.addEventListener('load', function () {
 	handleSliderHero();
 	handleSetMarginFeature();
+	handleReturnTop();
 });
 
 

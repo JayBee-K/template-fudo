@@ -341,9 +341,62 @@
 	display: block;
 	content: ""
 }
+
 .section-introduction .button-theme {
 	width: 320px;
 }
+
 .section-introduction .button-theme + .button-theme {
 	margin-top: 10px;
+}
+
+.footer-subscribe {
+	background: var(--primary-color);
+	padding: 10px 0;
+}
+
+.footer-subscribe .subscribe-text {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+.footer-subscribe .subscribe-form {
+	gap: 24px;
+}
+
+.footer-subscribe .subscribe-form .form-control {
+	border: 0;
+	outline: none;
+	box-shadow: none;
+	height: 40px;
+	border-radius: 100px;
+	padding: 0.375rem 1.25rem;
+	font-size: 1.15em;
+	color: var(--primary-color);
+	font-weight: 500;
+}
+
+.footer-subscribe .subscribe-form .form-control::placeholder {
+	opacity: .7;
+}
+
+.footer-subscribe .subscribe-form .button-theme {
+	height: 40px;
+	padding: 12px 32px 10px;
+}
+
+.footer-return {
+	padding: 30px 0;
+}
+
+.footer-return .footer-return_button{
+	width: 45px;
+	height: 45px;
+	color: var(--bs-white);
+	background: var(--dark-theme);
+	font-size: 1.3em;
+}
+
+.footer-return .footer-return_button:hover {
+	background: var(--primary-color);
 }
