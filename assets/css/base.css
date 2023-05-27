@@ -210,8 +210,6 @@ button:focus {
 }
 
 .limit {
-	--font-size: 1em;
-	--line-height: inherit;
 	--line: 2;
 	overflow: hidden;
 	-o-text-overflow: ellipsis;
@@ -220,7 +218,6 @@ button:focus {
 	-webkit-line-clamp: var(--line);
 	line-clamp: var(--line);
 	-webkit-box-orient: vertical;
-	height: calc(var(--line) * var(--font-size) * var(--line-height));
 }
 
 input::-webkit-outer-spin-button,
