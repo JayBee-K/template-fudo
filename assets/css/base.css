@@ -115,7 +115,7 @@
 	--font-theme: 'Nunito', Arial, Helvetica, sans-serif;
 
 	--primary-color: #599240;
-	--primary-hover: #AFCE30;
+	--primary-hover: #42732d;
 	--dark-theme: #606161;
 	--gray-theme: #828282;
 	--gradient-theme: radial-gradient(50% 50% at 50% 50%, rgba(152, 186, 19, 0.99) 0%, #4D8900 100%);
@@ -365,4 +365,18 @@ input[type='number'] {
 	color: var(--dark-theme);
 	font-size: 1.25em;
 	line-height: 1.5;
+}
+
+.section-heading .heading-link > a {
+	color: var(--dark-theme);
+	font-size: 1.15em;
+	line-height: 1.5;
+	font-weight: 600;
+	border-radius: 50px;
+	padding: 8px 16px;
+}
+
+.section-heading .heading-link > a:hover {
+	color: var(--primary-color);
+	background: #f5f5f5;
 }
