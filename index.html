@@ -31,7 +31,99 @@
 </head>
 <body>
 
-<div id="header" class="header">
+<div id="header" class="header bg-white position-fixed w-100 top-0 zi-10">
+    <div class="container">
+        <div class="header-grid position-relative zi-3 hstack">
+            <div class="header-item">
+                <a href="index.html" class="header-logo vstack">
+                    <img src="./assets/images/logo.png" height="30px" width="76px" class="mw-100" alt="">
+                </a>
+            </div>
+            <div class="header-item flex-grow-1">
+                <div class="header-search">
+                    <form class="search-form position-relative hstack" action="">
+                        <input type="text" class="search-form_input form-control"
+                               placeholder="Khăn giấy tre Fudo Tissue">
+                        <button type="submit" class="search-form_button"><i class="far fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="header-item ms-auto">
+                <div class="header-buttons hstack">
+                    <a href="" class="header-button_item header-button_store hstack">
+                        <i class="fas fa-shopping-cart"></i>
+                        CỬA HÀNG
+                    </a>
+                    <a href="" class="header-button_item header-button_search hstack">
+                        <i class="far fa-search"></i>
+                    </a>
+                    <div class="header-button_item header-button_wrapper position-relative">
+                        <a href="javascript:void(0)" class="header-button_user hstack">
+                            <i class="far fa-user-alt"></i>
+                        </a>
+                        <ul class="user-list vstack">
+                            <li class="user-list_item">
+                                <a href="" class="user-list_btn hstack">
+                                    <span class="user-list_item--icon">
+                                        <img src="./assets/images/icons/information.png" class="img-fluid" alt="">
+                                    </span>
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li class="user-list_item">
+                                <a href="" class="user-list_btn hstack">
+                                    <span class="user-list_item--icon">
+                                        <img src="./assets/images/icons/order-list.png" class="img-fluid" alt="">
+                                    </span>
+                                    Đơn hàng của tôi
+                                </a>
+                            </li>
+                            <li class="user-list_item">
+                                <a href="" class="user-list_btn hstack">
+                                    <span class="user-list_item--icon">
+                                        <img src="./assets/images/icons/signout.png" class="img-fluid" alt="">
+                                    </span>
+                                    Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href=""
+                       class="header-button_item header-button_cart rounded-circle hstack justify-content-center">
+                        <img src="./assets/images/icons/cart-stroke.png" width="20" height="20" class="img-fluid"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <ul class="header-navigation position-relative zi-2 hstack justify-content-center">
+            <li class="navigation-item">
+                <a href="" class="navigation-item_btn">
+                    SẢN PHẨM
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="" class="navigation-item_btn">
+                    VỀ CHÚNG TÔI
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="" class="navigation-item_btn">
+                    KHÁM PHÁ
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="" class="navigation-item_btn">
+                    ĐỐI TÁC
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="" class="navigation-item_btn">
+                    LIÊN HỆ
+                </a>
+            </li>
+        </ul>
+    </div>
     <div class="header-overlay" id="header-overlay"></div>
 </div>
 

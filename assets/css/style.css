@@ -1,3 +1,162 @@
+.header {
+    box-shadow: 0px 0px 33.4221px rgba(130, 89, 9, 0.0575083), 0px 2.5182px 2.21381px rgba(130, 89, 9, 0.0224916);
+}
+
+.header .header-grid {
+    gap: 50px;
+}
+
+.header .header-logo {
+    background-color: var(--primary-color);
+    padding: 16px 20px;
+    border-radius: 0 0 15px 15px;
+}
+
+.header .header-search .search-form .search-form_input {
+    border-radius: 100px;
+    height: 40px;
+    padding: 0.375rem 1.25rem 0.375rem 3rem;
+    font-size: 1em;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--dark-theme);
+    color: var(--dark-theme);
+}
+
+.header .header-search .search-form .search-form_button {
+    position: absolute;
+    top: calc(50% + 1px);
+    transform: translateY(-50%);
+    left: 0.5rem;
+    border: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    color: var(--dark-theme);
+    background-color: transparent;
+    font-size: 1.1em;
+    border-radius: 50%;
+}
+
+.header .header-button_store {
+    color: var(--dark-theme);
+    gap: 8px;
+    font-weight: 600;
+}
+
+.header .header-button_store:hover {
+    color: var(--primary-color);
+}
+
+.header .header-button_store > i {
+    position: relative;
+    top: -1px;
+}
+
+.header .header-buttons {
+    gap: 12px;
+}
+
+.header .header-button_user,
+.header .header-button_search {
+    color: var(--dark-theme);
+    padding: 10px;
+    font-size: 1.15em;
+}
+
+.header .header-button_wrapper .user-list {
+    position: absolute;
+    background: rgb(248, 248, 248);
+    border: 2px solid #FFFFFF;
+    box-shadow: 0px 0px 33.4221px rgba(130, 89, 9, 0.0575083), 0px 2.5182px 2.21381px rgba(130, 89, 9, 0.0224916);
+    border-radius: 8px;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    min-width: 220px;
+    width: max-content;
+    top: calc(100% + 20px);
+    transform: translateX(-50%);
+    left: 50%;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: var(--transition-default);
+}
+
+.header .header-button_wrapper:hover .user-list {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    top: calc(100% + 10px);
+}
+
+.header .header-button_wrapper .user-list:before {
+    position: absolute;
+    top: -20px;
+    height: 20px;
+    width: 100%;
+    background-color: transparent;
+    display: block;
+    content: "";
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.header .header-button_wrapper .user-list .user-list_item .user-list_btn {
+    color: var(--dark-theme);
+    font-weight: 600;
+    gap: 5px;
+    padding: 8px 16px;
+}
+
+.header .header-button_wrapper .user-list .user-list_item .user-list_btn:hover {
+    color: var(--primary-color);
+}
+
+.header .header-button_wrapper .user-list .user-list_item .user-list_btn .user-list_item--icon {
+    width: 22px;
+    display: inline-block;
+    text-align: center;
+}
+
+.header .header-button_search:hover {
+    color: var(--primary-color);
+}
+
+.header .header-button_cart {
+    color: var(--bs-white);
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 40px;
+}
+
+.header .header-button_cart:hover {
+    background-color: var(--dark-theme);
+}
+
+.header .header-navigation {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    gap: 24px;
+}
+
+.header .header-navigation .navigation-item .navigation-item_btn {
+    font-size: 1.05em;
+    color: var(--dark-theme);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 12px 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header .header-navigation .navigation-item .navigation-item_btn:hover {
+    color: var(--primary-color);
+}
+
 .banner-image {
     border-radius: 24px;
     border: 1px solid var(--dark-theme);
