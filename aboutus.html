@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Template Fudo</title>
+	<meta name="description" content="Template Fudo">
+	<meta name="author" content="">
+
+	<meta property="og:title" content="Template Fudo">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="Template Fudo">
+	<meta property="og:image" content="">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		  rel="stylesheet">
+
+	<link rel="icon" href="./assets/images/favicon.png">
+	<link rel="apple-touch-icon" href="./assets/images/favicon.png">
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+	<link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<div id="header" class="header bg-white position-fixed w-100 top-0 zi-10">
+	<div class="container">
+		<div class="header-grid position-relative zi-3 hstack">
+			<div class="header-item">
+				<a href="index.html" class="header-logo vstack">
+					<img src="./assets/images/logo.png" height="30px" width="76px" class="mw-100" alt="">
+				</a>
+			</div>
+			<div class="header-item flex-grow-1">
+				<div class="header-search">
+					<form class="search-form position-relative hstack" action="">
+						<input type="text" class="search-form_input form-control"
+							   placeholder="Khăn giấy tre Fudo Tissue">
+						<button type="submit" class="search-form_button"><i class="far fa-search"></i></button>
+					</form>
+				</div>
+			</div>
+			<div class="header-item ms-auto">
+				<div class="header-buttons hstack">
+					<a href="" class="header-button_item header-button_store hstack">
+						<i class="fas fa-shopping-cart"></i>
+						CỬA HÀNG
+					</a>
+					<a href="" class="header-button_item header-button_search hstack">
+						<i class="far fa-search"></i>
+					</a>
+					<div class="header-button_item header-button_wrapper position-relative">
+						<a href="javascript:void(0)" class="header-button_user hstack">
+							<i class="far fa-user-alt"></i>
+						</a>
+						<ul class="user-list vstack">
+							<li class="user-list_item">
+								<a href="" class="user-list_btn hstack">
+									<span class="user-list_item--icon">
+										<img src="./assets/images/icons/information.png" class="img-fluid" alt="">
+									</span>
+									Thông tin tài khoản
+								</a>
+							</li>
+							<li class="user-list_item">
+								<a href="" class="user-list_btn hstack">
+									<span class="user-list_item--icon">
+										<img src="./assets/images/icons/order-list.png" class="img-fluid" alt="">
+									</span>
+									Đơn hàng của tôi
+								</a>
+							</li>
+							<li class="user-list_item">
+								<a href="" class="user-list_btn hstack">
+									<span class="user-list_item--icon">
+										<img src="./assets/images/icons/signout.png" class="img-fluid" alt="">
+									</span>
+									Đăng xuất
+								</a>
+							</li>
+						</ul>
+					</div>
+					<a href=""
+					   class="header-button_item header-button_cart rounded-circle hstack justify-content-center">
+						<img src="./assets/images/icons/cart-stroke.png" width="20" height="20" class="img-fluid"
+							 alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+		<ul class="header-navigation position-relative zi-2 hstack justify-content-center">
+			<li class="navigation-item">
+				<a href="" class="navigation-item_btn">
+					SẢN PHẨM
+				</a>
+			</li>
+			<li class="navigation-item">
+				<a href="aboutus.html" class="navigation-item_btn active">
+					VỀ CHÚNG TÔI
+				</a>
+			</li>
+			<li class="navigation-item">
+				<a href="" class="navigation-item_btn">
+					KHÁM PHÁ
+				</a>
+			</li>
+			<li class="navigation-item">
+				<a href="" class="navigation-item_btn">
+					ĐỐI TÁC
+				</a>
+			</li>
+			<li class="navigation-item">
+				<a href="" class="navigation-item_btn">
+					LIÊN HỆ
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="header-overlay" id="header-overlay"></div>
+</div>
+
+<div id="main" class="main">
+	<div class="section-breadcrumb background-cover" style="background-image: url('./assets/images/breadcrumb-bg.jpg')">
+		<div class="container">
+			<ol class="breadcrumb mb-0">
+				<li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+				<li class="breadcrumb-item active">Giới thiệu</li>
+			</ol>
+		</div>
+	</div>
+	<div class="section-aboutus">
+		<div class="container-fluid g-0">
+			<div class="row">
+				<div class="col-lg-6">
+					<img src="./assets/images/demo-2.jpg" class="img-fluid" alt="">
+				</div>
+				<div class="col-lg-6">
+					<div class="aboutus-inner vstack align-items-start justify-content-center text-start h-100">
+						<img src="./assets/images/logo-color.png" class="img-fluid" alt="">
+						<div class="aboutus-content">
+							Năm 2018, Với ý tưởng tìm kiếm và mang tới những sản phẩm tiện lợi phục vụ cho cuộc sống
+							hàng ngày, Fudo được thành lập, dần hình thành và xây dựng những sản phẩm riêng với sứ mệnh
+							mang tới các sản phẩm đặt chất lượng là giá trị cốt lõi, bền vững với tương lai.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="section-gap position-relative">
+		<div class="introduction-decor-2 position-absolute">
+			<img width="393" height="343"
+				 src="./assets/images/decor-introduction-2.png"
+				 alt="">
+		</div>
+		<div class="introduction-decor-3 position-absolute">
+			<img width="172" height="310"
+				 src="./assets/images/decor-introduction-3.png"
+				 alt="">
+		</div>
+		<div class="introduction-decor-4 position-absolute">
+			<img width="125" height="147"
+				 src="./assets/images/decor-introduction-4.png"
+				 alt="">
+		</div>
+		<div class="container">
+			<div class="row g-3 justify-content-center">
+				<div class="col-xl-8 col-lg-10">
+					<div class="introduction-wrapper">
+						<div class="introduction-item position-relative flex-grow-1">
+							<div class="section-heading">
+								<div class="heading-sub">
+									Giá trị cốt lõi
+								</div>
+								<div class="heading-description">
+									Chúng tôi tin rằng sự tận tâm, cung cấp các sản phẩm sáng tạo có giá trị đích thực
+									chính là nền móng cốt lõi của kinh doanh, không chỉ có giá trị cho doanh nghiệp, mà
+									còn với xã hội
+								</div>
+							</div>
+						</div>
+						<div class="introduction-item position-relative flex-grow-1">
+							<div class="section-heading">
+								<div class="heading-sub">
+									Tầm nhìn
+								</div>
+								<div class="heading-description">
+									Fudo hướng tới là công ty tiên phong về trải nghiệm mua sắm trực tuyến các sản phẩm
+									sáng tạo và bền vững với môi trường, cung cấp đầy đủ hệ sinh thái sản phẩm ngành gia
+									dụng dành cho gia đình, phục vụ cuộc sống tiện lợi.
+								</div>
+							</div>
+						</div>
+						<div class="introduction-item position-relative flex-grow-1">
+							<div class="section-heading">
+								<div class="heading-sub">
+									Sứ mệnh
+								</div>
+								<div class="heading-description">
+									Mang tới các sản phẩm sáng tạo, ưu tiên chất lượng, bền vững với tương lai
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-6 col-lg-8">
+					<div class="aboutus-block vstack">
+						<div class="aboutus-block_text text-center">
+							<div class="section-heading">
+								<div class="heading-title">
+									Từ khởi đầu với Khăn giấy tre <br>Fudo Tissue
+								</div>
+								<div class="heading-description">
+									Khăn giấy tre Fudo là sản phẩm đầu tiên Fudo đưa tới khách hàng và hiện nay vẫn là
+									sản
+									phẩm nhận được nhiều phản hồi tích cực cũng như sự yêu thích của khách hàng.
+								</div>
+							</div>
+						</div>
+						<div class="aboutus-block_image overflow-hidden pseudo position-relative">
+							<img src="./assets/images/demo-3.png" class="img-fluid" alt="">
+							<div class="aboutus-image_content position-absolute bottom-0 zi-2">
+								<div class="section-heading">
+									<div class="heading-title">
+										100% BỘT TRE<br>KHÔNG TẤY TRẮNG
+									</div>
+									<div class="heading-description">
+										<p>KHÔNG TẠO MÙI</p>
+										<p>KHÔNG TẨY TRẮNG</p>
+										<p>CHẤT LƯỢNG TẠO NÊN SỰ KHÁC BIỆT</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="aboutus-block_text text-center">
+							<div class="section-heading">
+								<div class="heading-title">
+									Tới trải nghiệm mua sắm<br>
+									trực tuyến tiện lợi
+								</div>
+								<div class="heading-description">
+									Vào thị trường với rất nhiều khó khăn, Fudo quyết định chọn hướng tiếp cận mới và
+									riêng cho mình. Chúng tôi chọn mua hàng trực tuyến là phương thức chính để tiếp cận
+									khách hàng, tận dụng ưu điểm không khoảng cách với tiêu chí:
+									<br>
+									<span style="font-size: 1.5em; font-weight: 700; color: #606161">
+										Chất lượng tới tay thay lời cam kết
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="aboutus-block_image overflow-hidden pseudo position-relative">
+							<img src="./assets/images/demo-4.png" class="img-fluid" alt="">
+							<div class="aboutus-image_content position-absolute bottom-0 zi-2">
+								<div class="section-heading">
+									<div class="heading-title">
+										Mua sắm trực tuyến<br>
+										an toàn, nhanh chóng<br>tại fudo web store
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="aboutus-block_image overflow-hidden position-relative rounded-0">
+							<img src="./assets/images/demo-5.png" class="img-fluid" alt="">
+						</div>
+						<div class="aboutus-block_text text-center">
+							<div class="section-heading">
+								<div class="heading-title">
+									Mua giấy tại nhà
+								</div>
+								<div class="heading-description">
+									<p>Tận dụng ưu thế đó, Fudo triển khai dịch vụ đặt hàng giao tận nhà, với chất lượng
+									   sản phẩm luôn đồng bộ, bạn không cần phải lo lắng về việc mỗi lần mua hàng lại
+									   khác nhau cũng như chờ đợi quá lâu.
+									</p>
+									<p>Ngoài ra, chúng tôi còn có chính sách đổi trả dễ dàng, chỉ cần bạn nói không
+									   thích, Fudo sẽ thực hiện hoàn đơn và tiền cho bạn.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-8 col-lg-10">
+					<div class="section-heading text-center mt-4">
+						<div class="heading-title">
+							Chúng tôi tin rằng tận tâm cung cấp giá trị đích thực <br>chính là nền móng cốt lõi của kinh doanh bền vững
+						</div>
+						<div class="heading-image">
+							<img src="./assets/images/logo-short.png" class="img-fluid" alt="">
+						</div>
+						<div class="heading-button">
+							<a class="button-theme button-theme_dark__outline button-theme_rounded--sm" href="">
+								<span class="button-theme_icon">
+									<img src="./assets/images/icons/store-dark.png"
+										 class="img-fluid button-theme_icon--default" alt="">
+									<img src="./assets/images/icons/store.png"
+										 class="img-fluid button-theme_icon--hover" alt="">
+								</span>
+								TRẢI NGHIỆM MUA SẮM NGAY TẠI FUDO
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer id="footer" class="footer">
+	<div class="footer-return text-center">
+		<button type="button" id="return-top"
+				class="footer-return_button rounded-circle border-0 outline align-middle d-inline-flex align-items-center justify-content-center">
+			<i class="fas fa-arrow-up"></i>
+		</button>
+	</div>
+	<div class="footer-subscribe">
+		<div class="container">
+			<div class="row g-3 align-items-center">
+				<div class="col-lg-6">
+					<div class="subscribe-text text-white">
+						Đăng ký nhận nội dung và khuyến mãi dành riêng cho bạn
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<form action="">
+						<div class="subscribe-form hstack">
+							<input type="text" class="form-control" placeholder="Email">
+							<button type="submit" class="button-theme button-theme_primary__outline">
+								ĐĂNG KÍ
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-information">
+		<div class="container">
+			<div class="row g-3">
+				<div class="col-lg-4">
+					<div class="footer-sub">
+						CÔNG TY TNHH FUDO
+					</div>
+					<div class="footer-link vstack">
+						<div class="footer-link_item">
+							Địa chỉ: <a href="https://goo.gl/maps/LUdqKtQyPrD63pG57" target="_blank">
+							2A1 Giải Phóng, P.04, Q. Tân Bình, Tp.HCM
+						</a>
+						</div>
+						<div class="footer-link_item">
+							Hotline: <a href="tel:0977422247">0977 4222 47</a> - <a href="tel:0838032132">0838 032
+																										  132</a>
+						</div>
+						<div class="footer-link_item">
+							Email: <a href="mailto:info@fudovietnam.com">info@fudovietnam.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="row g-3">
+						<div class="col-lg-6">
+							<div class="footer-link vstack">
+								<div class="footer-link_item">
+									<a href="">Giới thiệu</a>
+								</div>
+								<div class="footer-link_item">
+									<a href="">Sản phẩm</a>
+								</div>
+								<div class="footer-link_item">
+									<a href="">Khám phá</a>
+								</div>
+								<div class="footer-link_item">
+									<a href="">Liên hệ</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="footer-link vstack">
+								<div class="footer-link_item">
+									<a href="">Chính sách thanh toán</a>
+								</div>
+								<div class="footer-link_item">
+									<a href="">Chính sách giao hàng</a>
+								</div>
+								<div class="footer-link_item">
+									<a href="">Dành cho đại lý</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="footer-title">
+						Fudo lắng nghe bạn!
+					</div>
+					<div class="footer-text">
+						Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể
+						nâng
+						cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+					</div>
+					<div class="footer-contact hstack">
+						<div class="footer-contact_item vstack">
+							<div class="footer-contact_item--top hstack">
+								<img src="./assets/images/icons/phone-primary.png" class="img-fluid" alt="">
+								Hotline
+							</div>
+							<div class="footer-contact_item--bottom">
+								<a href="tel:+84987422247">
+									+84 987 4222 47
+								</a>
+							</div>
+						</div>
+						<div class="footer-contact_item vstack">
+							<div class="footer-contact_item--top hstack">
+								<img src="./assets/images/icons/envelope-primary.png" class="img-fluid" alt="">
+								Email
+							</div>
+							<div class="footer-contact_item--bottom">
+								<a href="info@fudovietnam.com">
+									info@fudovietnam.com
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-description">
+		<div class="container">
+			<div class="row g-3 align-items-center">
+				<div class="col-lg-4">
+					<div class="footer-block">
+						<div class="footer-policy hstack">
+							<a href="" class="d-inline-flex align-middle position-relative">
+								Privacy Policy
+							</a>
+							<a href="" class="d-inline-flex align-middle position-relative">
+								Term and conditions
+							</a>
+						</div>
+						<div class="footer-copyright">
+							© 2023 Fudo Co., Ltd. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="footer-social hstack justify-content-center">
+						<div class="footer-social_text">
+							Theo dõi chúng tôi tại
+						</div>
+						<div class="footer-social_list hstack justify-content-center">
+							<a href="" class="d-inline-flex align-middle">
+								<i class="fab fa-facebook-square"></i>
+							</a>
+							<a href="" class="d-inline-flex align-middle">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="text-lg-end">
+						<a href="" class="d-inline-flex align-middle">
+							<img src="./assets/images/dk-bct.png" height="39" width="126" class="w-auto mw-100"
+								 alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<div class="floating-chat">
+	<a href="" class="floating-chat_btn">
+		<img src="/assets/images/icons/chat.png" width="25px" height="25px" alt="" class="img-fluid">
+		CHAT VỚI FUDO
+	</a>
+</div>
+
+
+<script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type="text/javascript"
+		src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript" src="./assets/plugins/fancybox/fancybox.min.js"></script>
+<script type="module" src="./assets/js/app.js"></script>
+</body>
+</html>
