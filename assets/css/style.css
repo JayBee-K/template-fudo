@@ -154,7 +154,7 @@
 }
 
 .main {
-	padding-bottom: 100px;
+	padding-bottom: 120px;
 }
 
 .banner-image {
@@ -886,7 +886,7 @@
 }
 
 .page-aboutus,
-.page-post{
+.page-post {
 	background: linear-gradient(180deg, #FFFFFF -31.92%, #FFF1DD 131.92%);
 }
 
@@ -1159,10 +1159,190 @@
 	font-size: 1.25em;
 }
 
-.post-decor .post-decor_heading .heading-description > span{
+.post-decor .post-decor_heading .heading-description > span {
 	color: var(--bs-white);
 }
 
 .post-decor .post-decor_image {
 	right: 100px;
+}
+
+.post-card .card-image_ratio {
+	--bs-aspect-ratio: calc(280 / 661 * 100%);
+}
+
+.post-card .card-body .card-meta {
+	gap: 20px;
+}
+
+.post-card .card-body .card-meta .card-meta_item {
+	color: #6E6E6E;
+	font-size: 1em;
+}
+
+.post-card .card-body .card-meta .card-meta_category > a {
+	color: var(--primary-color);
+}
+
+.post-card .card-body .card-meta .card-meta_category > a:hover {
+	color: var(--primary-hover);
+}
+
+.post-card .card-body .card-title {
+	font-size: 2em;
+	color: var(--bs-black);
+	font-weight: 500;
+	line-height: 1.2;
+	margin-top: 10px;
+	transition: var(--transition-default);
+}
+
+.post-card .card-body .card-desc {
+	font-size: 1.15em;
+	color: var(--dark-theme);
+	--line: 3;
+}
+
+.post-card .card-title:hover {
+	color: var(--primary-color);
+}
+
+.post-list {
+	gap: 1.5rem;
+}
+
+.post-list .post-list_item .post-card .card-image_wrapper {
+	width: 20%;
+	flex-shrink: 0;
+}
+
+.post-list .post-list_item .post-card .card-image_ratio {
+	--bs-aspect-ratio: calc(116 / 140 * 100%);
+}
+
+.post-list .post-list_item .post-card {
+	background: transparent;
+}
+
+.post-list .post-list_item .post-card .card-body {
+	padding: 6px 16px;
+}
+
+.post-list .post-list_item .post-card .card-body .card-title {
+	font-size: 1.65em;
+	--line: 1;
+}
+
+.post-list .post-list_item .post-card .card-body .card-desc {
+	font-size: 1.15em;
+	--line: 1;
+}
+
+.post-list.post-list_large .post-list_item .post-card .card-image_wrapper {
+	width: 33.333%;
+	flex-shrink: 0;
+}
+
+.post-list.post-list_large .post-list_item .post-card .card-image_ratio {
+	--bs-aspect-ratio: calc(116 / 140 * 100%);
+}
+
+.post-list.post-list_large .post-list_item .post-card .card-body .card-title {
+	--line: 2;
+}
+
+.post-list.post-list_large .post-list_item .post-card .card-body .card-desc {
+	--line: 3;
+}
+
+.post-detail .post-detail_title {
+	font-weight: 700;
+	color: var(--dark-theme);
+	font-size: 2.4em;
+	margin-bottom: 20px;
+}
+
+.post-detail .post-detail_meta {
+	gap: 20px;
+}
+
+.post-detail .post-detail_meta .card-meta_item {
+	color: #6E6E6E;
+	font-size: 1em;
+}
+
+.post-detail .post-detail_meta .card-meta_category > a {
+	color: var(--primary-color);
+}
+
+.post-detail .post-detail_meta .card-meta_category > a:hover {
+	color: var(--primary-hover);
+}
+
+.post-detail .post-detail_meta .detail-meta_social {
+	gap: 15px;
+}
+
+.post-detail .post-detail_meta .detail-meta_social .social-item_label {
+	background: var(--primary-color);
+	border-radius: 4px;
+	color: var(--bs-white);
+	padding: 3px 8px;
+}
+
+.post-detail .post-detail_meta .detail-meta_social .social-item_share {
+	color: var(--dark-theme);
+	font-size: 1.15em;
+}
+
+.post-detail .post-detail_meta .detail-meta_social .social-item_share:hover {
+	color: var(--primary-color);
+}
+
+.post-detail_content {
+	font-size: 16px;
+}
+
+.post-detail_content img {
+	max-width: 100%;
+	margin-bottom: 1rem;
+}
+
+.post-detail_content h2,
+.post-detail_content .h2,
+.post-detail_content h3,
+.post-detail_content .h3,
+.post-detail_content h4,
+.post-detail_content .h4,
+.post-detail_content h5,
+.post-detail_content .h5,
+.post-detail_content h6,
+.post-detail_content .h6 {
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.post-detail_content h2,
+.post-detail_content .h2 {
+	font-size: 2em;
+}
+
+.post-detail_content h3,
+.post-detail_content .h3 {
+	font-size: 1.8em;
+}
+
+.post-detail_content h4,
+.post-detail_content .h4 {
+	font-size: 1.6em;
+}
+
+.post-detail_content h5,
+.post-detail_content .h5 {
+	font-size: 1.4em;
+}
+
+.post-detail_content h6,
+.post-detail_content .h6 {
+	font-size: 1.2em;
 }

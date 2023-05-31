@@ -447,3 +447,7 @@ input[type='number'] {
 	color: var(--bs-black);
 	font-size: 1.15em;
 }
+
+.section-heading.section-heading_small .heading-title {
+	font-size: 2em;
+}
