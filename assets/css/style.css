@@ -912,8 +912,7 @@
 	color: var(--bs-black);
 }
 
-.page-aboutus,
-.page-post {
+.background-page {
 	background: linear-gradient(180deg, #FFFFFF -31.92%, #FFF1DD 131.92%);
 }
 
@@ -1721,7 +1720,7 @@
 	background: transparent;
 	border: 0;
 	border-radius: 0;
-	box-shadow: 0;
+	box-shadow: none;
 	outline: none;
 	color: var(--primary-color);
 	font-size: 1.25em;
@@ -1750,9 +1749,10 @@
 	padding: 16px;
 }
 
-.order-information .order-information_title {
+.order-information .order-information_title,
+.order-item .order-header .order-header_title{
 	font-size: 1.5em;
-	font-weight: 500;
+	font-weight: 700;
 	color: var(--dark-theme);
 }
 
@@ -1773,10 +1773,15 @@
 	gap: 8px;
 	padding-top: 16px;
 	margin-top: 16px;
-	border-top: 1px dotted var(--dark-theme);
+	border-top: 2px dashed rgba(0, 0, 0, 0.2);
 }
 
 .order-information .order-information_inner .order-information_buttons .button-theme {
 	width: 100%;
 	border-radius: 4px;
+}
+
+.order-success {
+	border-radius: 24px;
+	box-shadow: none;
 }

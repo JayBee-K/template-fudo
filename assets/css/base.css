@@ -279,6 +279,10 @@ input[type='number'] {
 	padding: 35px 0;
 }
 
+.page-gap {
+	padding: 145px 0 35px;
+}
+
 .button-theme {
 	border-radius: 50px;
 	font-size: 1em;
