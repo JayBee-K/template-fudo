@@ -1556,7 +1556,7 @@
 .order-item {
 	box-shadow: 0px 0px 33.4221px rgba(130, 89, 9, 0.0575083), 0px 2.5182px 2.21381px rgba(130, 89, 9, 0.0224916);
 	border-radius: 8px;
-	padding: 12px;
+	padding: 16px;
 }
 
 .order-item .order-header {
@@ -1660,6 +1660,10 @@
 }
 
 .order-item .order-footer .order-total {
+	gap: 16px;
+}
+
+.order-item .order-footer .order-total:not(.order-total_detail) {
 	border-radius: 8px;
 	padding: 12px;
 	background: #F0F0F0;
@@ -1676,16 +1680,43 @@
 	color: var(--bs-black);
 }
 
+.order-item .order-footer .order-total.order-total_detail .order-total_value {
+	font-size: 1.75em;
+	color: var(--bs-black);
+	font-weight: 700;
+}
+
+.order-item .order-footer .order-fee {
+	gap: 8px;
+}
+
+.order-item .order-footer .order-fee .order-fee_item {
+	gap: 16px;
+	font-size: 1.15em;
+	color: var(--dark-theme);
+}
+
 .order-item .order-footer .order-button .button-theme {
 	width: 100%;
 	border-radius: 4px;
+}
+
+.order-item .order-footer .order-payment {
+	background: var(--bs-white);
+	border: 1px solid var(--primary-color);
+	border-radius: 8px;
+	padding: 8px 12px;
+	font-weight: 700;
+	color: var(--dark-theme);
+	font-size: 1.15em;
+	gap: 8px;
 }
 
 .order-loadmore {
 	margin-top: 24px;
 }
 
-.order-loadmore .order-loadmore_btn{
+.order-loadmore .order-loadmore_btn {
 	padding: 0;
 	background: transparent;
 	border: 0;
@@ -1700,4 +1731,52 @@
 
 .order-loadmore .order-loadmore_btn:hover {
 	color: var(--primary-hover);
+}
+
+.order-back .order-back_btn {
+	color: var(--dark-theme);
+	font-size: 1em;
+	gap: 5px;
+	font-weight: 700;
+}
+
+.order-back .order-back_btn:hover {
+	color: var(--primary-color);
+}
+
+.order-information {
+	box-shadow: 0px 0px 33.4221px rgba(130, 89, 9, 0.0575083), 0px 2.5182px 2.21381px rgba(130, 89, 9, 0.0224916);
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.order-information .order-information_title {
+	font-size: 1.5em;
+	font-weight: 500;
+	color: var(--dark-theme);
+}
+
+.order-information .order-information_inner {
+	margin-top: 24px;
+}
+
+.order-information .order-information_inner .order-information_list .information-item {
+	border: 1px solid #b0b0b0;
+	border-radius: 20px;
+	font-size: 1.15em;
+	font-weight: 700;
+	color: var(--dark-theme);
+	padding: 8px 16px;
+}
+
+.order-information .order-information_inner .order-information_buttons {
+	gap: 8px;
+	padding-top: 16px;
+	margin-top: 16px;
+	border-top: 1px dotted var(--dark-theme);
+}
+
+.order-information .order-information_inner .order-information_buttons .button-theme {
+	width: 100%;
+	border-radius: 4px;
 }
