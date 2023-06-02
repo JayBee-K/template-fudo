@@ -912,6 +912,10 @@
 	color: var(--bs-black);
 }
 
+.page-checkout {
+	background: #F8F9FC
+}
+
 .background-page {
 	background: linear-gradient(180deg, #FFFFFF -31.92%, #FFF1DD 131.92%);
 }
@@ -1563,6 +1567,11 @@
 	margin-bottom: 16px;
 }
 
+.order-item .order-header .order-header_information {
+	font-size: 1.05em;
+	color: var(--gray-theme);
+}
+
 .order-item .order-header .order-code {
 	padding: 5px 10px;
 	background: var(--primary-color);
@@ -1686,13 +1695,23 @@
 }
 
 .order-item .order-footer .order-fee {
-	gap: 8px;
+	gap: 12px;
 }
 
 .order-item .order-footer .order-fee .order-fee_item {
 	gap: 16px;
 	font-size: 1.15em;
 	color: var(--dark-theme);
+}
+
+.order-item .order-footer .order-fee .order-fee_item .fee-item_value {
+	text-align: right;
+}
+
+.order-item .order-footer .order-fee .order-fee_item .fee-item_value > span {
+	color: var(--primary-color);
+	display: block;
+	font-size: 0.9em;
 }
 
 .order-item .order-footer .order-button .button-theme {
@@ -1709,6 +1728,15 @@
 	color: var(--dark-theme);
 	font-size: 1.15em;
 	gap: 8px;
+}
+
+.order-item .order-divider {
+	margin: 24px 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.order-item .order-divider.order-divider_dotted {
+	border-top: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 .order-loadmore {
@@ -1732,17 +1760,6 @@
 	color: var(--primary-hover);
 }
 
-.order-back .order-back_btn {
-	color: var(--dark-theme);
-	font-size: 1em;
-	gap: 5px;
-	font-weight: 700;
-}
-
-.order-back .order-back_btn:hover {
-	color: var(--primary-color);
-}
-
 .order-information {
 	box-shadow: 0px 0px 33.4221px rgba(130, 89, 9, 0.0575083), 0px 2.5182px 2.21381px rgba(130, 89, 9, 0.0224916);
 	border-radius: 8px;
@@ -1750,7 +1767,7 @@
 }
 
 .order-information .order-information_title,
-.order-item .order-header .order-header_title{
+.order-item .order-header .order-header_title {
 	font-size: 1.5em;
 	font-weight: 700;
 	color: var(--dark-theme);
@@ -1771,9 +1788,9 @@
 
 .order-information .order-information_inner .order-information_buttons {
 	gap: 8px;
-	padding-top: 16px;
-	margin-top: 16px;
-	border-top: 2px dashed rgba(0, 0, 0, 0.2);
+	padding-top: 24px;
+	margin-top: 24px;
+	border-top: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 .order-information .order-information_inner .order-information_buttons .button-theme {

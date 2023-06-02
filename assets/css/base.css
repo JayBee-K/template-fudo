@@ -392,6 +392,17 @@ input[type='number'] {
 	color: var(--bs-white);
 }
 
+.button-back {
+	color: var(--dark-theme);
+	font-size: 1.15em;
+	gap: 5px;
+	font-weight: 700;
+}
+
+.button-back:hover {
+	color: var(--primary-color);
+}
+
 .section-heading {
 	display: flex;
 	flex-direction: column;
