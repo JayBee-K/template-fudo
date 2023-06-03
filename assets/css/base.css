@@ -365,6 +365,11 @@ input[type='number'] {
 	color: var(--dark-theme);
 }
 
+.button-theme.button-theme_secondary {
+	background: #E2AA18;
+	color: var(--bs-white);
+}
+
 .button-theme.button-theme_large {
 	padding: 14px 36px;
 }
