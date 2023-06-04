@@ -1,6 +1,13 @@
 'use strict';
 export let windowWidth = window.innerWidth;
 
+export function handleSetSpacingBody() {
+    let bodyElm = document.querySelector('body');
+    let headerElm = document.getElementById('header');
+
+    bodyElm.style.setProperty('padding-top', `${headerElm.offsetHeight}px`);
+}
+
 export function handleCallNavigationMobile() {
     let buttonElm = document.getElementById('header-button_hamburger');
     let bodyElm = document.querySelector('body');
@@ -82,7 +89,7 @@ export function handleSliderHero() {
             effect: 'slide',
             loop: true,
             autoplay: {
-                delay: 8000,
+                delay: 800000,
                 disableOnInteraction: false,
             },
             navigation: {
@@ -157,8 +164,12 @@ export function handleSliderProductDetail() {
         let sliderDetailThumb = new Swiper('#detail-thumb .swiper', {
             spaceBetween: 8,
             slidesPerView: 4,
-            direction: "vertical",
             loopAdditionalSlides: 0,
+            breakpoints: {
+                992: {
+                    direction: "vertical",
+                }
+            }
         });
 
         console.log(sliderDetailThumb);
@@ -195,6 +206,7 @@ export function handleSliderReview() {
 }
 
 window.addEventListener('load', function () {
+    handleSetSpacingBody();
     handleCallSearchMobile();
     handleCallNavigationMobile();
 
@@ -208,6 +220,7 @@ window.addEventListener('load', function () {
 
     window.addEventListener("resize", () => {
         windowWidth = window.innerWidth;
+        handleSetSpacingBody();
         handleCallNavigationMobile();
         handleCallSearchMobile();
     });

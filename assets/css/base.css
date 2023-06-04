@@ -128,7 +128,7 @@ body {
     color: var(--bs-gray-800);
     font-family: var(--font-theme);
     font-size: 14px;
-    font-weight: 00;
+    font-weight: 400;
     font-style: normal;
     background-color: #fff;
     line-height: 1.4;
@@ -280,7 +280,7 @@ input[type='number'] {
 }
 
 .page-gap {
-    padding: 145px 0 35px;
+    padding: 35px 0;
 }
 
 .button-theme {
@@ -298,6 +298,8 @@ input[type='number'] {
     border: 0;
     outline: none;
     box-shadow: none;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .button-theme.button-theme_rounded--sm {
@@ -309,6 +311,7 @@ input[type='number'] {
     overflow: hidden;
     height: 20px;
     width: 20px;
+    flex-shrink: 0;
 }
 
 .button-theme .button-theme_icon [class*=button-theme_icon] {
@@ -337,6 +340,7 @@ input[type='number'] {
 .button-theme img {
     height: 20px;
     width: 20px;
+    flex-shrink: 0;
 }
 
 .button-theme > i {
@@ -441,6 +445,7 @@ input[type='number'] {
     font-weight: 600;
     border-radius: 50px;
     padding: 8px 16px;
+    white-space: nowrap;
 }
 
 .section-heading .heading-link > a:hover {
@@ -478,7 +483,7 @@ input[type='number'] {
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .section-heading .heading-title {
-        font-size: 2.1em;
+        font-size: 2em;
     }
 
     .section-heading .heading-sub {
@@ -512,7 +517,7 @@ input[type='number'] {
 
 @media screen and (max-width: 991px) {
     .section-heading .heading-title {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
     .section-heading .heading-sub {
@@ -531,8 +536,8 @@ input[type='number'] {
         font-size: 1.05em;
     }
 
-    .section-heading.section-heading_2 .heading-titl {
-        font-size: 2.4em;
+    .section-heading.section-heading_2 .heading-title {
+        font-size: 2em;
     }
 
     .section-heading.section-heading_2 .heading-sub {
