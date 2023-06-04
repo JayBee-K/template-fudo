@@ -56,7 +56,6 @@ export function handleReturnTop() {
 
 export function handleCalMaxHeightArticleCard() {
     const articleCard = document.querySelectorAll('.article-card');
-    console.log(1);
     if (articleCard.length > 0) {
         const cardList = Array.from(articleCard);
         const heights = cardList.map(card => card.offsetHeight);
@@ -80,12 +79,59 @@ export function handleChangeTab() {
     })
 }
 
+export function handleSliderProductDetail() {
+    const detailAvatar = document.getElementById('detail-avatar');
+    const detailThumb = document.getElementById('detail-thumb');
+    if (detailAvatar && detailThumb) {
+        let sliderDetailThumb = new Swiper('#detail-thumb .swiper', {
+            spaceBetween: 8,
+            slidesPerView: 4,
+            direction: "vertical",
+            loopAdditionalSlides: 0,
+        });
+
+        console.log(sliderDetailThumb);
+        let sliderDetailAvatar = new Swiper('#detail-avatar .swiper', {
+            speed: 1000,
+            slidesPerView: 1,
+            thumbs: {
+                swiper: sliderDetailThumb,
+            },
+        });
+
+    }
+}
+
+export function handleSliderReview() {
+    const reviewSlider = document.getElementById('review-slider');
+    if (reviewSlider) {
+        new Swiper('#review-slider .swiper', {
+            speed: 1000,
+            preloadImages: false,
+            effect: 'slide',
+            loop: true,
+            navigation: {
+                nextEl: "#review-slider .slider-button_next",
+                prevEl: "#review-slider .slider-button_prev",
+            },
+            spaceBetween: 24,
+            breakpoints: {
+                1199: {
+                    slidesPerView: 3,
+                }
+            }
+        });
+    }
+}
+
 window.addEventListener('load', function () {
     handleSliderHero();
     handleSetMarginFeature();
     handleReturnTop();
     handleCalMaxHeightArticleCard();
     handleChangeTab();
+    handleSliderReview();
+    handleSliderProductDetail();
 });
 
 
