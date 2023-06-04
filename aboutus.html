@@ -39,7 +39,10 @@
                     <img src="./assets/images/logo.png" height="30px" width="76px" class="mw-100" alt="">
                 </a>
             </div>
-            <div class="header-item flex-grow-1">
+            <div class="header-item ms-auto ms-lg-0 flex-lg-grow-1" id="header-search">
+                <button type="button" id="header-search_btn" class="header-search_btn d-lg-none d-flex">
+                    <i class="far fa-search"></i>
+                </button>
                 <div class="header-search">
                     <form class="search-form position-relative hstack" action="">
                         <input type="text" class="search-form_input form-control"
@@ -48,13 +51,15 @@
                     </form>
                 </div>
             </div>
-            <div class="header-item ms-auto">
+            <div class="header-item ms-0 ms-lg-auto">
                 <div class="header-buttons hstack">
-                    <a href="" class="header-button_item header-button_store hstack">
+                    <a href="" class="header-button_item flex-shrink-0 header-button_store hstack">
                         <img src="./assets/images/icons/store-dark.png" width="16" height="16" class="img-fluid" alt="">
-                        CỬA HÀNG
+                        <span class="d-lg-flex d-none">
+                            CỬA HÀNG
+                        </span>
                     </a>
-                    <div class="header-button_item header-button_wrapper position-relative">
+                    <div class="header-button_item flex-shrink-0 header-button_wrapper position-relative">
                         <a href="javascript:void(0)" class="header-button_user hstack">
                             <i class="far fa-user-alt"></i>
                         </a>
@@ -85,44 +90,49 @@
                             </li>
                         </ul>
                     </div>
+                    <a href="javascript:void(0)"
+                       id="header-button_hamburger"
+                       class="header-button_item flex-shrink-0 d-flex d-lg-none header-button_hamburger hstack">
+                        <span></span>
+                    </a>
                     <a href=""
-                       class="header-button_item header-button_cart rounded-circle hstack justify-content-center">
+                       class="header-button_item flex-shrink-0 header-button_cart rounded-circle hstack justify-content-center">
                         <img src="./assets/images/icons/cart-stroke.png" width="20" height="20" class="img-fluid"
                              alt="">
                     </a>
                 </div>
             </div>
         </div>
-        <ul class="header-navigation position-relative zi-2 hstack justify-content-center">
-			<li class="navigation-item">
-				<a href="all-product.html" class="navigation-item_btn">
-					SẢN PHẨM
-				</a>
-			</li>
-			<li class="navigation-item">
-				<a href="aboutus.html" class="navigation-item_btn">
-					VỀ CHÚNG TÔI
-				</a>
-			</li>
-			<li class="navigation-item">
-				<a href="post-grid.html" class="navigation-item_btn">
-					KHÁM PHÁ
-				</a>
-			</li>
+        <ul class="header-navigation position-relative zi-2 hstack justify-content-center container" id="header-navigation">
+            <li class="navigation-item">
+                <a href="all-product.html" class="navigation-item_btn">
+                    SẢN PHẨM
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="aboutus.html" class="navigation-item_btn">
+                    VỀ CHÚNG TÔI
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="post-grid.html" class="navigation-item_btn">
+                    KHÁM PHÁ
+                </a>
+            </li>
             <li class="navigation-item">
                 <a href="partner.html" class="navigation-item_btn">
                     ĐỐI TÁC
                 </a>
             </li>
             <li class="navigation-item">
-                <a href="contact.html" class="navigation-item_btn">
+                <a href="contact.html" class="navigation-item_btn active">
                     LIÊN HỆ
                 </a>
             </li>
         </ul>
     </div>
-    <div class="header-overlay" id="header-overlay"></div>
 </div>
+<div class="bg-overlay"></div>
 
 <div id="main" class="main page-aboutus background-page">
     <div class="section-breadcrumb background-cover" style="background-image: url('./assets/images/breadcrumb-bg.jpg')">
@@ -425,7 +435,7 @@
                 </div>
                 <div class="col-lg-4">
                     <div class="row g-3">
-                        <div class="col-lg-6">
+                        <div class="col-sm-6">
                             <div class="footer-link vstack">
                                 <div class="footer-link_item">
                                     <a href="">Giới thiệu</a>
@@ -441,7 +451,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-sm-6">
                             <div class="footer-link vstack">
                                 <div class="footer-link_item">
                                     <a href="">Chính sách thanh toán</a>
@@ -527,7 +537,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="text-lg-end">
+                    <div class="text-center text-lg-end">
                         <a href="" class="d-inline-flex align-middle">
                             <img src="./assets/images/dk-bct.png" height="39" width="126" class="w-auto mw-100"
                                  alt="">

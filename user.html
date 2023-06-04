@@ -32,97 +32,107 @@
 <body>
 
 <div id="header" class="header bg-white position-fixed w-100 top-0 zi-10">
-	<div class="container">
-		<div class="header-grid position-relative zi-3 hstack">
-			<div class="header-item">
-				<a href="index.html" class="header-logo vstack">
-					<img src="./assets/images/logo.png" height="30px" width="76px" class="mw-100" alt="">
-				</a>
-			</div>
-			<div class="header-item flex-grow-1">
-				<div class="header-search">
-					<form class="search-form position-relative hstack" action="">
-						<input type="text" class="search-form_input form-control"
-							   placeholder="Khăn giấy tre Fudo Tissue">
-						<button type="submit" class="search-form_button"><i class="far fa-search"></i></button>
-					</form>
-				</div>
-			</div>
-			<div class="header-item ms-auto">
-				<div class="header-buttons hstack">
-					<a href="" class="header-button_item header-button_store hstack">
-						<img src="./assets/images/icons/store-dark.png" width="16" height="16" class="img-fluid" alt="">
-						CỬA HÀNG
-					</a>
-					<div class="header-button_item header-button_wrapper position-relative">
-						<a href="javascript:void(0)" class="header-button_user hstack">
-							<i class="far fa-user-alt"></i>
-						</a>
-						<ul class="user-list vstack">
-							<li class="user-list_item">
-								<a href="" class="user-list_btn hstack">
-									<span class="user-list_item--icon">
-										<img src="./assets/images/icons/information.png" class="img-fluid" alt="">
-									</span>
-									Thông tin tài khoản
-								</a>
-							</li>
-							<li class="user-list_item">
-								<a href="" class="user-list_btn hstack">
-									<span class="user-list_item--icon">
-										<img src="./assets/images/icons/order-list.png" class="img-fluid" alt="">
-									</span>
-									Đơn hàng của tôi
-								</a>
-							</li>
-							<li class="user-list_item">
-								<a href="" class="user-list_btn hstack">
-									<span class="user-list_item--icon">
-										<img src="./assets/images/icons/signout.png" class="img-fluid" alt="">
-									</span>
-									Đăng xuất
-								</a>
-							</li>
-						</ul>
-					</div>
-					<a href=""
-					   class="header-button_item header-button_cart rounded-circle hstack justify-content-center">
-						<img src="./assets/images/icons/cart-stroke.png" width="20" height="20" class="img-fluid"
-							 alt="">
-					</a>
-				</div>
-			</div>
-		</div>
-		<ul class="header-navigation position-relative zi-2 hstack justify-content-center">
-			<li class="navigation-item">
-				<a href="all-product.html" class="navigation-item_btn">
-					SẢN PHẨM
-				</a>
-			</li>
-			<li class="navigation-item">
-				<a href="aboutus.html" class="navigation-item_btn">
-					VỀ CHÚNG TÔI
-				</a>
-			</li>
-			<li class="navigation-item">
-				<a href="post-grid.html" class="navigation-item_btn">
-					KHÁM PHÁ
-				</a>
-			</li>
-			<li class="navigation-item">
-				<a href="partner.html" class="navigation-item_btn">
-					ĐỐI TÁC
-				</a>
-			</li>
-			<li class="navigation-item">
-				<a href="contact.html" class="navigation-item_btn active">
-					LIÊN HỆ
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div class="header-overlay" id="header-overlay"></div>
+    <div class="container">
+        <div class="header-grid position-relative zi-3 hstack">
+            <div class="header-item">
+                <a href="index.html" class="header-logo vstack">
+                    <img src="./assets/images/logo.png" height="30px" width="76px" class="mw-100" alt="">
+                </a>
+            </div>
+            <div class="header-item ms-auto ms-lg-0 flex-lg-grow-1" id="header-search">
+                <button type="button" id="header-search_btn" class="header-search_btn d-lg-none d-flex">
+                    <i class="far fa-search"></i>
+                </button>
+                <div class="header-search">
+                    <form class="search-form position-relative hstack" action="">
+                        <input type="text" class="search-form_input form-control"
+                               placeholder="Khăn giấy tre Fudo Tissue">
+                        <button type="submit" class="search-form_button"><i class="far fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="header-item ms-0 ms-lg-auto">
+                <div class="header-buttons hstack">
+                    <a href="" class="header-button_item flex-shrink-0 header-button_store hstack">
+                        <img src="./assets/images/icons/store-dark.png" width="16" height="16" class="img-fluid" alt="">
+                        <span class="d-lg-flex d-none">
+                            CỬA HÀNG
+                        </span>
+                    </a>
+                    <div class="header-button_item flex-shrink-0 header-button_wrapper position-relative">
+                        <a href="javascript:void(0)" class="header-button_user hstack">
+                            <i class="far fa-user-alt"></i>
+                        </a>
+                        <ul class="user-list vstack">
+                            <li class="user-list_item">
+                                <a href="" class="user-list_btn hstack">
+                                    <span class="user-list_item--icon">
+                                        <img src="./assets/images/icons/information.png" class="img-fluid" alt="">
+                                    </span>
+                                    Thông tin tài khoản
+                                </a>
+                            </li>
+                            <li class="user-list_item">
+                                <a href="" class="user-list_btn hstack">
+                                    <span class="user-list_item--icon">
+                                        <img src="./assets/images/icons/order-list.png" class="img-fluid" alt="">
+                                    </span>
+                                    Đơn hàng của tôi
+                                </a>
+                            </li>
+                            <li class="user-list_item">
+                                <a href="" class="user-list_btn hstack">
+                                    <span class="user-list_item--icon">
+                                        <img src="./assets/images/icons/signout.png" class="img-fluid" alt="">
+                                    </span>
+                                    Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)"
+                       id="header-button_hamburger"
+                       class="header-button_item flex-shrink-0 d-flex d-lg-none header-button_hamburger hstack">
+                        <span></span>
+                    </a>
+                    <a href=""
+                       class="header-button_item flex-shrink-0 header-button_cart rounded-circle hstack justify-content-center">
+                        <img src="./assets/images/icons/cart-stroke.png" width="20" height="20" class="img-fluid"
+                             alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <ul class="header-navigation position-relative zi-2 hstack justify-content-center container" id="header-navigation">
+            <li class="navigation-item">
+                <a href="all-product.html" class="navigation-item_btn">
+                    SẢN PHẨM
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="aboutus.html" class="navigation-item_btn">
+                    VỀ CHÚNG TÔI
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="post-grid.html" class="navigation-item_btn">
+                    KHÁM PHÁ
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="partner.html" class="navigation-item_btn">
+                    ĐỐI TÁC
+                </a>
+            </li>
+            <li class="navigation-item">
+                <a href="contact.html" class="navigation-item_btn active">
+                    LIÊN HỆ
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>
+<div class="bg-overlay"></div>
 
 <div id="main" class="main page-users">
 	<div class="section-breadcrumb section-breadcrumb_nobg">
@@ -283,169 +293,169 @@
 </div>
 
 <footer id="footer" class="footer position-relative">
-	<div class="footer-return text-center">
-		<button type="button" id="return-top"
-				class="footer-return_button rounded-circle border-0 outline align-middle d-inline-flex align-items-center justify-content-center">
-			<i class="fas fa-arrow-up"></i>
-		</button>
-	</div>
-	<div class="footer-subscribe">
-		<div class="container">
-			<div class="row g-3 align-items-center">
-				<div class="col-lg-6">
-					<div class="subscribe-text text-white">
-						Đăng ký nhận nội dung và khuyến mãi dành riêng cho bạn
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<form action="">
-						<div class="subscribe-form hstack">
-							<input type="text" class="form-control" placeholder="Email">
-							<button type="submit" class="button-theme button-theme_primary__outline">
-								ĐĂNG KÍ
-							</button>
-						</div>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer-information">
-		<div class="container">
-			<div class="row g-3">
-				<div class="col-lg-4">
-					<div class="footer-sub">
-						CÔNG TY TNHH FUDO
-					</div>
-					<div class="footer-link vstack">
-						<div class="footer-link_item">
-							Địa chỉ: <a href="https://goo.gl/maps/LUdqKtQyPrD63pG57" target="_blank">
-							2A1 Giải Phóng, P.04, Q. Tân Bình, Tp.HCM
-						</a>
-						</div>
-						<div class="footer-link_item">
-							Hotline: <a href="tel:0977422247">0977 4222 47</a> - <a href="tel:0838032132">0838 032
-																										  132</a>
-						</div>
-						<div class="footer-link_item">
-							Email: <a href="mailto:info@fudovietnam.com">info@fudovietnam.com</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="row g-3">
-						<div class="col-lg-6">
-							<div class="footer-link vstack">
-								<div class="footer-link_item">
-									<a href="">Giới thiệu</a>
-								</div>
-								<div class="footer-link_item">
-									<a href="">Sản phẩm</a>
-								</div>
-								<div class="footer-link_item">
-									<a href="">Khám phá</a>
-								</div>
-								<div class="footer-link_item">
-									<a href="">Liên hệ</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6">
-							<div class="footer-link vstack">
-								<div class="footer-link_item">
-									<a href="">Chính sách thanh toán</a>
-								</div>
-								<div class="footer-link_item">
-									<a href="">Chính sách giao hàng</a>
-								</div>
-								<div class="footer-link_item">
-									<a href="">Dành cho đại lý</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="footer-title">
-						Fudo lắng nghe bạn!
-					</div>
-					<div class="footer-text">
-						Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể
-						nâng
-						cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.
-					</div>
-					<div class="footer-contact hstack">
-						<div class="footer-contact_item vstack">
-							<div class="footer-contact_item--top hstack">
-								<img src="./assets/images/icons/phone-primary.png" class="img-fluid" alt="">
-								Hotline
-							</div>
-							<div class="footer-contact_item--bottom">
-								<a href="tel:+84987422247">
-									+84 987 4222 47
-								</a>
-							</div>
-						</div>
-						<div class="footer-contact_item vstack">
-							<div class="footer-contact_item--top hstack">
-								<img src="./assets/images/icons/envelope-primary.png" class="img-fluid" alt="">
-								Email
-							</div>
-							<div class="footer-contact_item--bottom">
-								<a href="info@fudovietnam.com">
-									info@fudovietnam.com
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="footer-description">
-		<div class="container">
-			<div class="row g-3 align-items-center">
-				<div class="col-lg-4">
-					<div class="footer-block">
-						<div class="footer-policy hstack">
-							<a href="" class="d-inline-flex align-middle position-relative">
-								Privacy Policy
-							</a>
-							<a href="" class="d-inline-flex align-middle position-relative">
-								Term and conditions
-							</a>
-						</div>
-						<div class="footer-copyright">
-							© 2023 Fudo Co., Ltd. All Rights Reserved.
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="footer-social hstack justify-content-center">
-						<div class="footer-social_text">
-							Theo dõi chúng tôi tại
-						</div>
-						<div class="footer-social_list hstack justify-content-center">
-							<a href="" class="d-inline-flex align-middle">
-								<i class="fab fa-facebook-square"></i>
-							</a>
-							<a href="" class="d-inline-flex align-middle">
-								<i class="fab fa-instagram"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="text-lg-end">
-						<a href="" class="d-inline-flex align-middle">
-							<img src="./assets/images/dk-bct.png" height="39" width="126" class="w-auto mw-100"
-								 alt="">
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="footer-return text-center">
+        <button type="button" id="return-top"
+                class="footer-return_button rounded-circle border-0 outline align-middle d-inline-flex align-items-center justify-content-center">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+    <div class="footer-subscribe">
+        <div class="container">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-6">
+                    <div class="subscribe-text text-white">
+                        Đăng ký nhận nội dung và khuyến mãi dành riêng cho bạn
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form action="">
+                        <div class="subscribe-form hstack">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <button type="submit" class="button-theme button-theme_primary__outline">
+                                ĐĂNG KÍ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-information">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-4">
+                    <div class="footer-sub">
+                        CÔNG TY TNHH FUDO
+                    </div>
+                    <div class="footer-link vstack">
+                        <div class="footer-link_item">
+                            Địa chỉ: <a href="https://goo.gl/maps/LUdqKtQyPrD63pG57" target="_blank">
+                            2A1 Giải Phóng, P.04, Q. Tân Bình, Tp.HCM
+                        </a>
+                        </div>
+                        <div class="footer-link_item">
+                            Hotline: <a href="tel:0977422247">0977 4222 47</a> - <a href="tel:0838032132">0838 032
+                            132</a>
+                        </div>
+                        <div class="footer-link_item">
+                            Email: <a href="mailto:info@fudovietnam.com">info@fudovietnam.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-3">
+                        <div class="col-sm-6">
+                            <div class="footer-link vstack">
+                                <div class="footer-link_item">
+                                    <a href="">Giới thiệu</a>
+                                </div>
+                                <div class="footer-link_item">
+                                    <a href="">Sản phẩm</a>
+                                </div>
+                                <div class="footer-link_item">
+                                    <a href="">Khám phá</a>
+                                </div>
+                                <div class="footer-link_item">
+                                    <a href="">Liên hệ</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="footer-link vstack">
+                                <div class="footer-link_item">
+                                    <a href="">Chính sách thanh toán</a>
+                                </div>
+                                <div class="footer-link_item">
+                                    <a href="">Chính sách giao hàng</a>
+                                </div>
+                                <div class="footer-link_item">
+                                    <a href="">Dành cho đại lý</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-title">
+                        Fudo lắng nghe bạn!
+                    </div>
+                    <div class="footer-text">
+                        Chúng tôi luôn trân trọng và mong đợi nhận được mọi ý kiến đóng góp từ khách hàng để có thể
+                        nâng
+                        cấp trải nghiệm dịch vụ và sản phẩm tốt hơn nữa.
+                    </div>
+                    <div class="footer-contact hstack">
+                        <div class="footer-contact_item vstack">
+                            <div class="footer-contact_item--top hstack">
+                                <img src="./assets/images/icons/phone-primary.png" class="img-fluid" alt="">
+                                Hotline
+                            </div>
+                            <div class="footer-contact_item--bottom">
+                                <a href="tel:+84987422247">
+                                    +84 987 4222 47
+                                </a>
+                            </div>
+                        </div>
+                        <div class="footer-contact_item vstack">
+                            <div class="footer-contact_item--top hstack">
+                                <img src="./assets/images/icons/envelope-primary.png" class="img-fluid" alt="">
+                                Email
+                            </div>
+                            <div class="footer-contact_item--bottom">
+                                <a href="info@fudovietnam.com">
+                                    info@fudovietnam.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-description">
+        <div class="container">
+            <div class="row g-3 align-items-center">
+                <div class="col-lg-4">
+                    <div class="footer-block">
+                        <div class="footer-policy hstack">
+                            <a href="" class="d-inline-flex align-middle position-relative">
+                                Privacy Policy
+                            </a>
+                            <a href="" class="d-inline-flex align-middle position-relative">
+                                Term and conditions
+                            </a>
+                        </div>
+                        <div class="footer-copyright">
+                            © 2023 Fudo Co., Ltd. All Rights Reserved.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-social hstack justify-content-center">
+                        <div class="footer-social_text">
+                            Theo dõi chúng tôi tại
+                        </div>
+                        <div class="footer-social_list hstack justify-content-center">
+                            <a href="" class="d-inline-flex align-middle">
+                                <i class="fab fa-facebook-square"></i>
+                            </a>
+                            <a href="" class="d-inline-flex align-middle">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center text-lg-end">
+                        <a href="" class="d-inline-flex align-middle">
+                            <img src="./assets/images/dk-bct.png" height="39" width="126" class="w-auto mw-100"
+                                 alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
 
 <div class="floating-chat">

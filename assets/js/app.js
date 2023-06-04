@@ -1,5 +1,76 @@
 'use strict';
-export let windowWidth = $(window).width();
+export let windowWidth = window.innerWidth;
+
+export function handleCallNavigationMobile() {
+    let buttonElm = document.getElementById('header-button_hamburger');
+    let bodyElm = document.querySelector('body');
+    let headerNavigationElm = document.getElementById('header-navigation');
+    let isShow = false;
+
+    if (buttonElm && bodyElm && headerNavigationElm) {
+        if (windowWidth < 991) {
+            buttonElm.addEventListener('click', () => {
+                if (isShow) {
+                    bodyElm.classList.remove("is-navigation");
+                    isShow = false;
+                    handleCallSearchMobile(true);
+                } else {
+                    bodyElm.classList.add("is-navigation");
+                    isShow = true;
+                }
+            });
+
+            document.addEventListener("click", (event) => {
+                if (buttonElm && headerNavigationElm && event.target !== buttonElm && event.target !== headerNavigationElm) {
+                    bodyElm.classList.remove("is-navigation");
+                    isShow = false;
+                }
+            });
+        } else {
+            if (bodyElm.classList.contains('is-show')) {
+                bodyElm.classList.remove("is-navigation");
+                isShow = false;
+            }
+        }
+    }
+}
+
+export function handleCallSearchMobile(close = false) {
+    let buttonElm = document.getElementById('header-search_btn');
+    let formElm = document.getElementById('header-search');
+    let isShow = false;
+
+    if (buttonElm && formElm) {
+        if (windowWidth < 991) {
+            buttonElm.addEventListener('click', () => {
+                if (isShow) {
+                    formElm.classList.remove("is-show");
+                    isShow = false;
+                } else {
+                    formElm.classList.add("is-show");
+                    isShow = true;
+                }
+            });
+
+            document.addEventListener("click", (event) => {
+                if (buttonElm && event.target !== formElm && !formElm.contains(event.target)) {
+                    formElm.classList.remove("is-show");
+                    isShow = false;
+                }
+            });
+        } else {
+            if (formElm.classList.contains('is-show')) {
+                formElm.classList.remove("is-show");
+                isShow = false;
+            }
+        }
+    }
+
+    if (close) {
+        formElm.classList.remove("is-show");
+        isShow = false;
+    }
+}
 
 export function handleSliderHero() {
     const heroSlider = document.getElementById('hero-slider');
@@ -98,7 +169,6 @@ export function handleSliderProductDetail() {
                 swiper: sliderDetailThumb,
             },
         });
-
     }
 }
 
@@ -125,6 +195,9 @@ export function handleSliderReview() {
 }
 
 window.addEventListener('load', function () {
+    handleCallSearchMobile();
+    handleCallNavigationMobile();
+
     handleSliderHero();
     handleSetMarginFeature();
     handleReturnTop();
@@ -132,6 +205,12 @@ window.addEventListener('load', function () {
     handleChangeTab();
     handleSliderReview();
     handleSliderProductDetail();
+
+    window.addEventListener("resize", () => {
+        windowWidth = window.innerWidth;
+        handleCallNavigationMobile();
+        handleCallSearchMobile();
+    });
 });
 
 
