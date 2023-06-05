@@ -89,7 +89,7 @@ export function handleSliderHero() {
             effect: 'slide',
             loop: true,
             autoplay: {
-                delay: 800000,
+                delay: 8000,
                 disableOnInteraction: false,
             },
             navigation: {
