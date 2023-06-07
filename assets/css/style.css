@@ -3453,7 +3453,7 @@
 
 .modal-user .modal-user_form .form-item .form-item_label {
     color: var(--primary-color);
-    font-size: 1.15em;
+    font-size: 1.1em;
     margin-bottom: 0;
     font-weight: 600;
 }
@@ -3516,6 +3516,21 @@
     box-shadow: none;
     outline: none;
     font-size: 1.1em;
+}
+
+@media screen and (max-width: 767px) {
+    .modal-user .modal-header .modal-title {
+        font-size: 1.8em;
+    }
+
+    .modal-user .modal-header .modal-desc {
+        color: var(--bs-black);
+        font-size: 1.05em;
+    }
+
+    .modal-user .modal-user_form .form-item .form-item_label {
+        font-size: 1.05em;
+    }
 }
 
 .detail-description .detail-tab .nav-tabs {
