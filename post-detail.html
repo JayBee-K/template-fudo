@@ -32,6 +32,206 @@
 <body>
 
 
+
+<div class="modal fade modal-theme" id="popup-isLogin" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Nhập email mua hàng của bạn</div>
+                <button type="button" class="modal-theme_close" data-bs-dismiss="modal">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="modal-theme_form vstack">
+                    <div class="form-item">
+                        <input type="text" class="form-control" placeholder="Người nhận *" value="Thiện">
+                    </div>
+                    <div class="form-item">
+                        <input type="tel" minlength="10" maxlength="10" class="form-control"
+                               placeholder="Số điện thoại *" value="0838032132">
+                    </div>
+                    <div class="form-item">
+                        <input type="text" class="form-control" placeholder="Địa chỉ *"
+                               value="2A1 Giải Phóng, phường 04, quận Tân Bình">
+                    </div>
+                    <div class="form-item">
+                        <div class="form-check hstack">
+                            <input class="form-check-input" checked type="checkbox" value="" id="ship1">
+                            <label class="form-check-label" for="ship1">
+                                GIAO HỎA TỐC trong ngày <br>
+                                (Áp dụng riêng TP.HCM và Tp.Hà Nội)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <button type="submit" class="button-theme button-theme_primary button-theme_large w-100">
+                            <img src="./assets/images/icons/check-white.png" alt="">
+                            XÁC NHẬN VÀ THANH TOÁN
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-theme" id="popup-noLogin" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title">Nhập email mua hàng của bạn</div>
+                <button type="button" class="modal-theme_close" data-bs-dismiss="modal">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="modal-theme_form vstack">
+                    <div class="form-item">
+                        <input type="email" class="form-control" placeholder="Email mua hàng *">
+                    </div>
+                    <div class="form-item form-desc form-desc_secondary">
+                        Hãy điền chính xác Email vì Fudo sẽ tự động tạo và gửi thông tin tài khoản cho bạn
+                    </div>
+                    <div class="form-item form-desc">
+                        Thông tin giao hàng
+                    </div>
+                    <div class="form-item">
+                        <input type="text" class="form-control" placeholder="Người nhận *">
+                    </div>
+                    <div class="form-item">
+                        <input type="tel" minlength="10" maxlength="10" class="form-control"
+                               placeholder="Số điện thoại *">
+                    </div>
+                    <div class="form-item">
+                        <input type="text" class="form-control" placeholder="Địa chỉ *">
+                    </div>
+                    <div class="form-item">
+                        <div class="form-check hstack">
+                            <input class="form-check-input" type="checkbox" value="" id="ship2">
+                            <label class="form-check-label" for="ship2">
+                                GIAO HỎA TỐC trong ngày <br>
+                                (Áp dụng riêng TP.HCM và Tp.Hà Nội)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <button type="submit" class="button-theme button-theme_dark button-theme_large w-100">
+                            <img src="./assets/images/icons/check-white.png" alt="">
+                            XÁC NHẬN VÀ THANH TOÁN
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-user" id="popup-signup" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header position-relative vstack align-items-center justify-content-center text-center border-bottom-0">
+                <div class="modal-title">Đăng ký</div>
+                <div class="modal-desc">
+                    Bạn đã có tài khoản? <a href="#popup-signin" data-bs-toggle="modal">Đăng nhập</a>
+                </div>
+                <button type="button" class="modal-user_close" data-bs-dismiss="modal">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="modal-user_form vstack">
+                    <div class="form-item">
+                        <label for="" class="form-item_label">
+                            Email/SĐT
+                        </label>
+                        <input type="text" id="" class="form-control form-item_input"
+                               placeholder="Nhập Email/SĐT">
+                    </div>
+                    <div class="form-item">
+                        <label for="" class="form-item_label">
+                            Nhập OTP
+                        </label>
+                        <input type="text" id="" class="form-control form-item_input"
+                               placeholder="Nhập OTP">
+                    </div>
+                    <div class="form-item">
+                        <label for="" class="form-item_label">
+                            Nhập mật khẩu
+                        </label>
+                        <div class="form-item_group">
+                            <input type="password" id="" class="form-control form-item_input"
+                                   placeholder="Nhập mật khẩu">
+                            <button type="button" class="form-item_button"><i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <label for="" class="form-item_label">
+                            Nhập lại mật khẩu
+                        </label>
+                        <div class="form-item_group">
+                            <input type="password" id="" class="form-control form-item_input"
+                                   placeholder="Nhập lại mật khẩu">
+                            <button type="button" class="form-item_button"><i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-item text-center">
+                        <button type="submit" class="button-theme button-theme_primary button-theme_large w-100">ĐĂNG KÝ
+                            TÀI KHOẢN
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade modal-user" id="popup-signin" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header position-relative vstack align-items-center justify-content-center text-center border-bottom-0">
+                <div class="modal-title">Đăng nhập</div>
+                <div class="modal-desc">
+                    Bạn chưa có tài khoản? <a href="#popup-signup" data-bs-toggle="modal">Đăng ký</a>
+                </div>
+                <button type="button" class="modal-user_close" data-bs-dismiss="modal">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" class="modal-user_form vstack">
+                    <div class="form-item">
+                        <label for="" class="form-item_label">
+                            Email/SĐT
+                        </label>
+                        <input type="text" id="" class="form-control form-item_input"
+                               placeholder="Nhập Email/SĐT">
+                    </div>
+                    <div class="form-item">
+                        <label for="" class="form-item_label">
+                            Nhập mật khẩu
+                        </label>
+                        <div class="form-item_group">
+                            <input type="password" id="" class="form-control form-item_input"
+                                   placeholder="Nhập mật khẩu">
+                            <button type="button" class="form-item_button"><i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-item text-center">
+                        <button type="submit" class="button-theme button-theme_primary button-theme_large w-100">ĐĂNG NHẬP
+                            TÀI KHOẢN
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <div id="header" class="header bg-white position-fixed w-100 top-0 zi-10">
     <div class="container">
         <div class="header-grid position-relative zi-3 hstack">
