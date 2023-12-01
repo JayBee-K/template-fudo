@@ -566,10 +566,17 @@
 }
 
 .highlight-wrapper {
-	background: var(--primary-color);
-	-webkit-box-shadow: var(--shadow-theme);
-	box-shadow: var(--shadow-theme);
+	background: var(--bs-white);
+	border: 1px solid var(--dark-theme);
 	border-radius: 24px;
+}
+
+.highlight-wrapper .highlight-content .highlight-content_heading{
+	color: var(--dark-theme);
+}
+
+.highlight-wrapper .highlight-content .highlight-content_heading.highlight-content_heading__primary {
+	color: var(--primary-color);
 }
 
 .highlight-content {
